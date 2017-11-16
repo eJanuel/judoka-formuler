@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulaire</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <form method="get" onSubmit="userInfo(); return false;">
+
+            <!--get user name-->
+
+      <label>Quel est votre nom ?</label>
+
+      <input id="user_name" type="text" placeholder="Votre nom..">
+
+            <!--get user gender-->
+
+      <br><label>Quel est votre Genre ?</label>
+
+      <input id="genderChoice0" type="radio" name="form__gender" value="0">
+      <label for="genderChoice0">Femme</label>
+
+      <input id="genderChoice1" type="radio" name="form__gender" value="1">
+      <label for="genderChoice1">Homme</label>
+
+            <!--get user lang-->
+
+      <br><label>Quel est votre Langue ?</label>
+
+      <input id="langChoice0" type="radio" name="form__lang" value="0">
+      <label for="genderChoice0">Français</label>
+
+      <input id="langChoice1" type="radio" name="form__lang" value="1">
+      <label for="langChoice1">Anglais</label>
+
+            <!--get user age-->
+
+      <br><label>Quel est votre âge ?</label>
+      <input id="user_age" type="number" min="8" max="100">
+
+            <!--get user age-->
+
+      <br><label>Quel est votre poids ?</label>
+      <input id="user_weight" type="number" placeholder="Votre poids..">
+      <br><input type="Submit" value="ok">
+
+      <!--<span id="pushNameHere"></span>-->
+    </form>
+  </body>
+</html>

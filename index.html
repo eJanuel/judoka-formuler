@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulaire</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="main">
+      <form id="formAlert" onsubmit="goAlert(); return false;">
+        <fieldset>
+          <legend>Alert !</legend>
+          <input id="formAlert__submit" type="submit" value="Alert">
+        </fieldset>
+      </form>
+      <form id="formContact" onsubmit="formContact_result(); return false;">
+        <fieldset>
+          <legend>Mon super formulaire !</legend>
+          <div>
+            <label for="formContact__text">Mon champ texte :</label>
+            <input id="formContact__text" type="text" name="text">
+          </div>
+          <input id="formContact__submit" type="submit" value="Envoyer">
+          <div id="formContact__result">Le résultat</div>
+        </fieldset>
+      </form>
+      <form id="formColor" onsubmit="changeColor(); return false;">
+        <fieldset>
+          <legend>Change de couleur !</legend>
+          <input id="formColor__submit" type="submit" value="Change la couleur">
+          <input type="button" onclick="resetColor()" id="formColor__resetColor" value="reset">
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
